@@ -1,0 +1,37 @@
+.row {
+	width: 100%;
+}
+
+.btn-icon {
+	margin-right: 0.5rem !important;
+	margin-left: auto !important;
+}
+
+.btn-text {
+	margin-right: 0.25rem !important;
+	margin-right: auto !important;
+}
+
+#viewRecipeDirections {
+	list-style-type: decimal;
+	list-style-position: inside;
+	li {
+		display: list-item;
+	}
+}
+
+.dropdown-danger-item {
+	color: var(--red) !important;
+	&:active {
+		color: white !important;
+		background: var(--red) !important;
+	}
+}
+
+.custom-file-label {
+	opacity: 85%;
+}
+
+#sort-toolbar {
+	justify-content: center;
+}
