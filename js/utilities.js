@@ -33,7 +33,7 @@ Object.defineProperties(String.prototype, {
 	
 	toTitleCase: {
 		value: function() {
-			return this.replace(/[A-Za-zÀ-ú]+/g,
+			return this.replace(/[A-Za-zÀ-ú\']+/g,
 				(txt) => (txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase())
 			);
 		}

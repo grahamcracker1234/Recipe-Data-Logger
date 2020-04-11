@@ -38,7 +38,7 @@ class Sort {
 			const data = $(value).data("sort");
 			$(value)
 				.click(() => this.set(data))
-				.change(() => this.set(data));
+				.change(() => this.set(data))
 		});
 
 		$("#sort-direction").click(() => {

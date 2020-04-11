@@ -10,9 +10,17 @@ class RecipeForm {
 	
 	/** Initializes the recipe form. */
 	static setup() {
-		$(".custom-file-input").on("change", function() {
+		$(".custom-file-input").change(function() {
 			const fileName = $(this).val().split("\\").pop();
 			$(this).prev(".custom-file-label").addClass("selected").text(fileName);
+		});
+		
+		$("#recipeFormName").change(function() {
+			$(this).val($(this).val().toTitleCase());
+		});
+		
+		$("#recipeFormCategory").change(function() {
+			$(this).val($(this).val().toTitleCase());
 		});
 		
 		$("#addRecipe").click(() => this.add());
